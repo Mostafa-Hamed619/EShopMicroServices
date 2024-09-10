@@ -36,7 +36,6 @@ builder.Services.AddHealthChecks()
 var app = builder.Build();
 
 app.MapCarter();
-
 app.UseHealthChecks("/health",
     new HealthCheckOptions
     {
