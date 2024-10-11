@@ -1,6 +1,4 @@
-﻿
-
-using FluentValidation;
+﻿using FluentValidation;
 
 public record CreateProductCommand(string Name, string description, List<string> Catalogs, string ImageFile, decimal Price)
     :ICommand<CreateProductResult>;
